@@ -1,0 +1,27 @@
+# Virtual environments
+.venv/
+.venv_win/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+
+
+# Outdated and irrelevant files
+outdated/
+irrelevant/
+
+# Run logs
+*.log
+logs/
+run_logs/
+
+# Misc
+ANSP.pdf
+methodology.md
+thesis_data_requirements.md
+generate_section4_outputs.py

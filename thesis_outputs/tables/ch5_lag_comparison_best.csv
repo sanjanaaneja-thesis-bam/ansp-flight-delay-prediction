@@ -1,0 +1,17 @@
+Hub,Model,2hr,3hr,6hr,Best_Lag
+All,ANN,0.0404,0.0341,0.0165,2hr
+All,BaggedLR,0.0476,0.0318,0.0012,2hr
+All,RF,0.0187,0.0169,0.0118,2hr
+All,XGBoost,0.0206,0.0165,0.0104,2hr
+Large,ANN,0.0388,0.0326,0.0132,2hr
+Large,BaggedLR,0.0491,0.0329,0.0018,2hr
+Large,RF,0.0144,0.0124,0.0074,2hr
+Large,XGBoost,0.0163,0.0123,0.0071,2hr
+Medium,ANN,0.0399,0.0336,0.0226,2hr
+Medium,BaggedLR,0.039,0.0236,0.0001,2hr
+Medium,RF,0.0498,0.0471,0.0398,2hr
+Medium,XGBoost,0.035,0.0303,0.0251,2hr
+Small,ANN,0.0254,0.025,0.0144,2hr
+Small,BaggedLR,0.0224,0.0175,0.0,2hr
+Small,RF,0.0293,0.031,0.0289,3hr
+Small,XGBoost,0.0169,0.0198,0.0168,3hr

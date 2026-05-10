@@ -1,0 +1,12 @@
+Step,Pipeline,Description,Records_Removed,Records_Remaining
+1a,Large,"Authors' curated dataset (Tan et al., 2025) covering Jan-Nov 2023, 64 airports",0,5559465
+2a,Large,Restrict to study window: June + July 2023,4525464,1034001
+3a,Large,Retain flights with ORIGIN in 30 Large hubs (FAA CY2021 enplanements),234744,799257
+4a,Large,Closed-network filter: DEST in 60-airport sample (30 Large + 15 Medium + 15 Small),230718,568539
+1b,Medium+Small,Raw BTS On-Time Reporting: June + July 2023 (all U.S. carriers),0,1179128
+2b,Medium+Small,Retain flights with ORIGIN in 15 Medium or 15 Small hubs,1003022,176106
+3b,Medium+Small,Closed-network filter: DEST in 60-airport sample,23114,152992
+5,Combined,"Concatenate Large (568,539) + Medium (112,998) + Small (39,994); merge weather (IEM ASOS), traffic (+/-1 h windows), turnaround features",0,721531
+6,Combined,Drop rows with missing DEP_DEL15 label (cancelled / diverted flights),16325,705206
+7,Combined,"Merge monthly network centrality (betweenness, closeness) by (ORIGIN, MONTH)",0,705206
+8,Combined,"Merge hourly ANSP Delay_Score (alpha=0.85, beta=2.3, gamma=0.9) by (ORIGIN, Scheduled_DEP_EST floored to hour)",0,705206

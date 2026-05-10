@@ -1,0 +1,5 @@
+Hub Category,N Airports,Total Flights,% of Sample,Delay Rate >=15 min (%),Mean Departure Delay (min),Median Departure Delay (min)
+Large,30,568539,78.8,31.72,23.39,1.0
+Medium,15,112998,15.66,26.67,17.81,0.0
+Small,15,39994,5.54,23.31,17.12,-2.0
+Total,60,721531,100.0,30.46,22.18,0.0
